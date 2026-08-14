@@ -15,3 +15,34 @@ footer{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:35px;padding:6
 .hero-photo{background-image:url('../assets/persona-telefono.jpg');background-position:center 42%;filter:saturate(.72) sepia(.08)}
 .manifesto-photo{background-image:linear-gradient(90deg,rgba(36,23,34,.78),rgba(36,23,34,.2)),url('../assets/personas-conexion.jpg');background-position:center 45%}
 .profile-photo{background-image:linear-gradient(rgba(123,63,82,.24),rgba(36,23,34,.12)),url('../assets/personas-diversas.jpg');background-position:center;filter:saturate(.74)}
+
+/* Más densidad editorial en ventajas y proceso */
+.section-head>p{max-width:390px}
+.benefit-grid article{display:flex;min-height:480px;flex-direction:column}
+.benefit-grid article>span{margin:38px 0 22px}
+.benefit-grid .benefit-label{margin:0;color:var(--gold);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.benefit-grid h3{margin:13px 0 10px}
+.benefit-extra{margin-top:auto;padding-top:22px;border-top:1px solid #ffffff25}
+.benefit-extra span{color:var(--coral);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.benefit-extra p{margin:9px 0 0;font-size:12px}
+.process .section-head>p{color:#f0e3e5}
+.process ol{border:1px solid #ffffff50}
+.process li{display:flex;min-height:330px;flex-direction:column;justify-content:space-between}
+.process li small{color:var(--gold);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.process h3{margin:13px 0;font-size:25px}
+.process li p{margin:0;line-height:1.7;color:#f0e3e5}
+.process-note{display:grid;grid-template-columns:1fr auto;align-items:center;gap:45px;margin-top:28px;padding:28px 30px;border:1px solid #ffffff50;background:#ffffff0c}
+.process-note strong{font-family:var(--serif);font-size:25px}
+.process-note p{max-width:760px;margin:8px 0 0;color:#f0e3e5;font-size:13px;line-height:1.6}
+.process-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:35px;min-width:215px;padding:16px 18px;background:var(--gold);color:var(--wine);font-size:12px;font-weight:700}
+
+@media(max-width:600px){
+  .benefit-grid article{min-height:0;padding:28px 26px}
+  .benefit-grid article>span{margin:28px 0 20px}
+  .benefit-extra{margin-top:24px}
+  .process li{min-height:0;gap:55px;padding:28px 26px;border-right:0;border-bottom:1px solid #ffffff50}
+  .process li:last-child{border-bottom:0}
+  .process-note{grid-template-columns:1fr;gap:22px;padding:26px}
+  .process-note strong{font-size:23px}
+  .process-cta{width:100%}
+}
